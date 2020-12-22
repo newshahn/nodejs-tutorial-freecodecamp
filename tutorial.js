@@ -6,6 +6,8 @@ const PI = 3.14;
 //   },
 // };
 
-module.exports.sum = sum;
-module.exports.PI = PI;
+// module.exports.sum = sum;
+// module.exports.PI = PI;
 // module.exports.someMathObject = someMathObject;
+
+module.exports = { sum: sum, PI: PI };
