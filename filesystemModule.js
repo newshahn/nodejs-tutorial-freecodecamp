@@ -40,15 +40,25 @@ const fs = require("fs");
 //   }
 // });
 
-fs.mkdir("tutorial", (err) => {
-  if (err) {
-    console.log(err);
-  } else {
-    fs.writeFile("./tutorial/example.txt", "some example text", (err) => {
+// fs.mkdir("tutorial", (err) => {
+//   if (err) {
+//     console.log(err);
+//   } else {
+//     fs.writeFile("./tutorial/example.txt", "some example text", (err) => {
+//       if (err) console.log(err);
+//       else {
+//         console.log("file was successfully created.");
+//       }
+//     });
+//   }
+// });
+
+fs.unlink("./tutorial/example.txt", (err) => {
+  if (err) console.log(err);
+  else {
+    fs.rmdir("tutorial", (err) => {
       if (err) console.log(err);
-      else {
-        console.log("file was successfully created.");
-      }
+      else console.log("successfully deleted directory.");
     });
   }
 });
