@@ -15,10 +15,10 @@ rl.question(`what is ${num1} + ${num2}? \n`, (userInput) => {
     rl.setPrompt("wrong asnwer. try again. \n");
     rl.prompt();
     rl.on("line", (userInput) => {
-      if (userInput.trim() == trim) {
+      if (userInput.trim() == answer) {
         rl.close();
       } else {
-        rl.setPrompt(`your answer of ${userInput} is incorrect.`);
+        rl.setPrompt(`your answer of ${userInput} is incorrect. \n`);
         rl.prompt();
       }
     });
