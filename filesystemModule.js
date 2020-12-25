@@ -24,10 +24,18 @@ const fs = require("fs");
 //   }
 // });
 
-fs.appendFile("example2.txt", "some data being appended", (err) => {
+// fs.appendFile("example2.txt", "some data being appended", (err) => {
+//   if (err) {
+//     console.log(err);
+//   } else {
+//     console.log("successfully appended data to the file");
+//   }
+// });
+
+fs.unlink("example2.txt", (err) => {
   if (err) {
     console.log(err);
   } else {
-    console.log("successfully appended data to the file");
+    console.log("successfully deleted file.");
   }
 });
