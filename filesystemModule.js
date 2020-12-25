@@ -16,10 +16,18 @@ const fs = require("fs");
 //   }
 // });
 
-fs.rename("example.txt", "example2.txt", (err) => {
+// fs.rename("example.txt", "example2.txt", (err) => {
+//   if (err) {
+//     console.log(err);
+//   } else {
+//     console.log("success");
+//   }
+// });
+
+fs.appendFile("example2.txt", "some data being appended", (err) => {
   if (err) {
     console.log(err);
   } else {
-    console.log("success");
+    console.log("successfully appended data to the file");
   }
 });
