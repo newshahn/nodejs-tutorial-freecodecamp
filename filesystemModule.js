@@ -44,12 +44,10 @@ fs.mkdir("tutorial", (err) => {
   if (err) {
     console.log(err);
   } else {
-    console.log("folder successfully created.");
-    fs.rmdir("tutorial", (err) => {
-      if (err) {
-        console.log(err);
-      } else {
-        console.log("removed the directory");
+    fs.writeFile("./tutorial/example.txt", "some example text", (err) => {
+      if (err) console.log(err);
+      else {
+        console.log("file was successfully created.");
       }
     });
   }
