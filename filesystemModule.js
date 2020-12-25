@@ -32,10 +32,18 @@ const fs = require("fs");
 //   }
 // });
 
-fs.unlink("example2.txt", (err) => {
+// fs.unlink("example2.txt", (err) => {
+//   if (err) {
+//     console.log(err);
+//   } else {
+//     console.log("successfully deleted file.");
+//   }
+// });
+
+fs.mkdir("tutorial", (err) => {
   if (err) {
     console.log(err);
   } else {
-    console.log("successfully deleted file.");
+    console.log("folder successfully created.");
   }
 });
