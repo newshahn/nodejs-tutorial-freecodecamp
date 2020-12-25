@@ -11,6 +11,17 @@ let answer = num1 + num2;
 rl.question(`what is ${num1} + ${num2}? \n`, (userInput) => {
   if (userInput.trim() == answer) {
     rl.close();
+  } else {
+    rl.setPrompt("wrong asnwer. try again. \n");
+    rl.prompt();
+    rl.on("line", (userInput) => {
+      if (userInput.trim() == trim) {
+        rl.close();
+      } else {
+        rl.setPrompt(`your answer of ${userInput} is incorrect.`);
+        rl.prompt();
+      }
+    });
   }
 });
 
