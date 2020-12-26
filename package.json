@@ -1,0 +1,19 @@
+{
+  "name": "nodejs-tutorial-freecodecamp",
+  "version": "1.0.0",
+  "description": "nodejs tutorial",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/newshahn/nodejs-tutorial-freecodecamp.git"
+  },
+  "author": "Newsha Hosseiny NIk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/newshahn/nodejs-tutorial-freecodecamp/issues"
+  },
+  "homepage": "https://github.com/newshahn/nodejs-tutorial-freecodecamp#readme"
+}
