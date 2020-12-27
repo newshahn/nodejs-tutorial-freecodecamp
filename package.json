@@ -16,5 +16,7 @@
     "url": "https://github.com/newshahn/nodejs-tutorial-freecodecamp/issues"
   },
   "homepage": "https://github.com/newshahn/nodejs-tutorial-freecodecamp#readme",
-  "dependencies": {}
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
